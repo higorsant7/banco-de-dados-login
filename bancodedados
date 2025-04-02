@@ -1,0 +1,18 @@
+create database sistemaLogin
+character set utf8mb4
+collate       utf8mb4_unicode_ci;
+
+use sistemaLogin;
+
+create table if not exists usuario(
+id int not null auto_increment primary key,
+usuario varchar (50) not null,
+senha varchar(50) not null
+);
+                                          
+                                          
+insert into usuario (usuario, senha) values ('Higor', '123');
+insert into usuario (usuario, senha) values ('Matheus', '123');
+insert into usuario (usuario, senha) values ('Giordano', '123');
+
+select * from usuario;
